@@ -1,5 +1,5 @@
 FROM tomcat:9
-RUN apt-get update -y && apt-get install apache2 -y
+RUN apt-get update -y 
 COPY gameoflife.war /usr/local/tomcat/webapps
 EXPOSE 8080
 
